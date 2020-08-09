@@ -1,0 +1,27 @@
+{
+  "name": "xinke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "gulp server",
+    "build": "gulp build"
+  },
+  "author": "蛋蛋丶碎",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "browser-sync": "^2.26.12",
+    "chalk": "^4.1.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-open": "^3.0.1",
+    "gulp-uglify": "^3.0.2",
+    "st": "^2.0.0"
+  },
+  "dependencies": {}
+}

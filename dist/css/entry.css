@@ -1,0 +1,154 @@
+.entry {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*padding-top: 0;*/
+  overflow: hidden;
+  background-color: #FE6A7B;
+  transition: width .3s, height .3s;
+}
+
+/* btn */
+.entry-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 25rem;
+  background-color: #FFB7C0;
+  border-radius: 50%;
+  box-shadow: 0 0 .8rem rgb(223, 144, 154);
+  transition: width .2s, height .2s;
+  z-index: 50;
+}
+
+.entry-btn:hover {
+  width: 30rem;
+  height: 30rem;
+  transition: width .2s, height .2s;
+}
+
+@-webkit-keyframes img-ani {
+  0% {
+    position: relative;
+    top: -5%;
+    left: 0%;
+    transform: rotate(0);
+  }
+  25% {
+    position: relative;
+    top: 0;
+    left: 5%;
+    transform: rotate(20deg);
+  }
+  50% {
+    position: relative;
+    top: -5%;
+    left: 0;
+    transform: rotate(0);
+  }
+  75% {
+    position: relative;
+    top: 0;
+    left: -5%;
+    transform: rotate(-20deg);
+  }
+  100% {
+    position: relative;
+    top: -5%;
+    left: 0%;
+    transform: rotate(0);
+  }
+}
+
+@keyframes img-ani {
+  0% {
+    position: relative;
+    top: -5%;
+    left: 0%;
+    transform: rotate(0);
+  }
+  25% {
+    position: relative;
+    top: 0;
+    left: 5%;
+    transform: rotate(20deg);
+  }
+  50% {
+    position: relative;
+    top: -5%;
+    left: 0;
+    transform: rotate(0);
+  }
+  75% {
+    position: relative;
+    top: 0;
+    left: -5%;
+    transform: rotate(-20deg);
+  }
+  100% {
+    position: relative;
+    top: -5%;
+    left: 0%;
+    transform: rotate(0);
+  }
+}
+.entry-btn:hover > img {
+  -webkit-animation: img-ani 1s linear infinite;
+  animation: img-ani 1s linear infinite;
+}
+
+.entry-btn > img {
+  width: 10rem;
+  padding-bottom: 1rem;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* circle */
+.entry div[class^="entry-circle"] {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.entry-circle-1 {
+  width: 45rem;
+  height: 45rem;
+  background-color: #FFA5B2;
+  box-shadow: 0 0 .8rem #E07E8C;
+  z-index: 40;
+  transition: width .2s .1s, height .2s .1s;
+}
+.entry-btn:hover + .entry-circle-1 {
+  width: 50rem;
+  height: 50rem;
+}
+
+.entry-circle-2 {
+  width: 65rem;
+  height: 65rem;
+  background-color: #FF8F9C;
+  box-shadow: 0 0 .8rem #DC5E6F;
+  z-index: 30;
+  transition: width .2s .2s, height .2s .2s;
+}
+.entry-btn:hover ~ .entry-circle-2 {
+  width: 70rem;
+  height: 70rem;
+}
+
+/* entry-leave */
+.entry-leave {
+  padding-top: 5000px;
+  transition: padding-top .3s;
+}
+
+/* xinke */
+.entry-xinke {
+  height: 0;
+  transition: width .3s, height .3s;
+  z-index: 250;
+}
