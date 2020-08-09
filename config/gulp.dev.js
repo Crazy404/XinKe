@@ -12,29 +12,29 @@ function reload(cb) {
 }
 
 async function cleanHtml(cb) {
-  await del('dist/*.html')
+  await del('docs/*.html')
   cb()
 }
 
 async function cleanJs(cb) {
-  await del('dist/js')
+  await del('docs/js')
   cb()
 }
 
 async function cleanCss(cb) {
-  await del('dist/css')
+  await del('docs/css')
   cb()
 }
 
 async function cleanImg(cb) {
-  await del('dist/img')
+  await del('docs/img')
   cb()
 }
 
 function connect(cb) {
   let config = {
     port: 8080,
-    basePath: 'dist',
+    basePath: 'docs',
     index: 'index.html',
     uri: '127.0.0.1'
   }
@@ -42,7 +42,7 @@ function connect(cb) {
   browser.init({
     notify: false,
     server: {
-      baseDir: path.resolve(__dirname, '../dist')
+      baseDir: path.resolve(__dirname, '../docs')
     },
     port: 8080
   })

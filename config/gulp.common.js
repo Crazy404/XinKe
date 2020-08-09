@@ -7,13 +7,13 @@ const autoprefixer = require('gulp-autoprefixer')
 
 
 async function clean(cb) {
-  await del('dist')
+  await del('docs')
   cb()
 }
 
 function html(cb) {
   src('src/index.html')
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
   cb()
 }
 
@@ -22,7 +22,7 @@ function css(cb) {
     .pipe(autoprefixer({
       cascade: false
     }))
-    .pipe(dest('dist/css'))
+    .pipe(dest('docs/css'))
   cb()
 }
 
@@ -32,16 +32,16 @@ function js(cb) {
       presets: ['@babel/env']
     }))
     .pipe(uglify())
-    .pipe(dest('dist/js'))
+    .pipe(dest('docs/js'))
   
   cb()
 }
 
 function img(cb) {
   src(['src/img/*.png'])
-    .pipe(dest('dist/img'))
+    .pipe(dest('docs/img'))
   src(['src/img/*.ico'])
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
   
   cb()
 }
@@ -58,7 +58,7 @@ function inject(cb) {
         }
       }
     }))
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
   cb()
 }
 
