@@ -22,8 +22,11 @@ function btnClick () {
       entry.style.width = '0'
       
       setTimeout(function () {
-        // 启动页面移除
+        // 启动页面移除, 进入main
+        let main = document.getElementsByClassName('main')[0]
+        
         entry.parentNode.removeChild(entry)
+        main.style.display = 'block'
       }, 100)
     }, 2000)
   }, 250)

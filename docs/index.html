@@ -8,11 +8,24 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/entry.css">
+  <link rel="stylesheet" href="./css/loading.css">
+  <link rel="stylesheet" href="./css/main.css">
   <!-- endinject -->
 </head>
 <body>
+  <!-- loading -->
+  <div class="loading">
+    <img class="loading-img-1" style="z-index: 2" src="img/loading1.png"/>
+    <img class="loading-img-2" src="img/loading2.png"/>
+    <p class="enter">▶</p>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+    <p class="loading-value">0%</p>
+  </div>
+  
   <!-- 初始启动页面 -->
-  <div class="entry">
+  <div class="entry absolute-center">
     <div class="entry-btn absolute-center">
       <img src="./img/entry_btn.png"/>
     </div>
@@ -21,10 +34,17 @@
     <img class="entry-xinke absolute-center" src="./img/xinke1.png"/>
   </div>
   
-  <div class="main"></div>
+  <div class="main">
+    <div class="main-born">
+      <img class="main-hair" src="img/hair.png">
+      <img class="main-miao" src="img/miao1.png">
+    </div>
+  </div>
   <!-- inject:js -->
   <script src="./js/entry.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/loading.js"></script>
+  <script src="./js/main.js"></script>
   <!-- endinject -->
 </body>
 </html>

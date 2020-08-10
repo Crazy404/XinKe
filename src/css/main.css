@@ -1,0 +1,24 @@
+.main {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-born {
+
+}
+
+.main-hair {
+  position: absolute;
+  bottom: 30%;
+  left: 20rem;
+  width: 7rem;
+}
+
+.main-miao {
+  position: absolute;
+  bottom: 30%;
+  left: 30rem;
+  width: 20rem;
+}

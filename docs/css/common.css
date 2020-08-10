@@ -10,6 +10,10 @@ html, body{
   padding: 0;
   line-height: 1.1;
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 a {
