@@ -25,7 +25,7 @@ let valuep = loading.getElementsByClassName('loading-value')[0]
 let imgs = [
   'entry_btn',
   'xinke1',
-  'hair', 'miao1'
+  'hair', 'miao1', 'miao2', 'miao3'
 ]
 let imgCount = 0
 let loadingRate = 0

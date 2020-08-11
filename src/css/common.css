@@ -23,3 +23,21 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.clear-fix {
+  display: table;
+  clear: both;
+  width: 0;
+}
+
+@media screen and (max-width: 1600px){
+  html, body{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  html, body{
+    font-size: 12px;
+  }
+}
