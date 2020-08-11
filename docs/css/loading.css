@@ -1,0 +1,86 @@
+.loading {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #FE6A7B;
+}
+
+.loading-bar {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50rem;
+  height: 1rem;
+  border-radius: .5rem;
+  background-color: #c7ffff;
+  opacity: 70%;
+  z-index: 1;
+}
+.loading-progress {
+  width: 0;
+  height: 100%;
+  background-color: #00ffff;
+  border-radius: .5rem;
+  z-index: 10;
+  transition: width .3s;
+}
+
+.loading-value {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.loading .enter {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  color: #00ffff;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background-color: #c7ffff;
+  opacity: 50%;
+  border-radius: 1rem;
+  font-size: 2rem;
+  box-shadow: 0 0 1rem #00ffff;
+  cursor: pointer;
+}
+
+.loading > img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18rem;
+  height: 18rem;
+}
+
+@-webkit-keyframes loading-img1-toggle {
+  0% {
+    z-index: 3;
+  }
+  50% {
+    z-index: 1;
+  }
+}
+
+@keyframes loading-img1-toggle {
+  0% {
+    z-index: 3;
+  }
+  50% {
+    z-index: 1;
+  }
+}
+
+.loading-img-2 {
+  -webkit-animation: loading-img1-toggle 1s linear infinite;
+  animation: loading-img1-toggle 1s linear infinite;
+}
